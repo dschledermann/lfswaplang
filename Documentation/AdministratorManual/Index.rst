@@ -46,11 +46,11 @@ The code will then look like this:
 
    php typo3/cli_dispatch.phpsh swaplang 3862 Dansk
 
-If the page in question is 3862 and the language to swap to default language is "Dansk".
-The command will the print out a list of pages and content elements that will be swapped.
+If the page in question is 3862 and the language to swap to default language is "Dansk",
+then the command will print out a list of pages and content elements that will be swapped.
 It also prints the headers and titles of the elements.
 
-If you are satisfied with the list, you can supply the argument "really" at the end to execute the swap.
+If you are satisfied with the list, you can supply the argument "really" at the end, to execute the swap.
 
 .. code-block:: shell-script
 
