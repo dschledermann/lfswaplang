@@ -1,0 +1,9 @@
+
+module.tx_lfswaplang {
+  view {
+    templateRootPath = EXT:lfswaplang/Resources/Private/Backend/Templates/
+    partialRootPath = EXT:lfswaplang/Resources/Private/Backend/Partials/
+    layoutRootPath = EXT:lfswaplang/Resources/Private/Backend/Layouts/
+  }
+}
+

@@ -1,0 +1,34 @@
+<f:form action="execute" id="submit-form" onsubmit="return confirm('Really swap languages?');">
+  <h1>Swap language</h1>
+
+  <p>On this branch select a language to swap for the default language.</p>
+
+  <p>This will swap the following fields on the following tables:</p>
+
+  <h3>Pages and Pages language overlay</h3>
+
+  <ul>
+    <li>Title</li>
+  </ul>
+
+
+  <h3>Content</h3>
+  <ul>
+    <li>Header</li>
+    <li>Sub header</li>
+    <li>Bodytext</li>
+  </ul>
+
+  <p>The uid's of each element is unchanged. This means that all relations are unchanged.</p>
+
+  <p>Other fields are not subject to swap. Contact support if your data set has content in other fields that needs swapping.</p>
+
+  <div>
+    <label>Language:</label>
+    <f:form.select name="language" options="{languages}" />
+  </div>
+
+  <div>
+    <f:form.submit name="submit" value="Swap!" />
+  </div>
+</f:form>

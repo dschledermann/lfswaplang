@@ -18,13 +18,14 @@ echo base64_decode($language_swap_banner);
 echo "==========================================================================\n";
 
 if (($pid = $_SERVER['argv'][1]) && ($lang = $_SERVER['argv'][2])) {
-	$langswap = t3lib_div::makeInstance('Tx_Lfswaplang_Swapper');
+	$langswap = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('Linkfactory\\Lfswaplang\\Swapper');
 	$langswap->setSwapLang($lang);
 	$langswap->setPid($pid);
 	$langswap->setReally($_SERVER['argv'][3]);
-	$langswap->run();	
+	$langswap->run();
+
+	echo implode("\n", $langswap->debug);
 }
 else {
 	throw new \Exception("Provide both pageid and language name.\n");
 }
-
